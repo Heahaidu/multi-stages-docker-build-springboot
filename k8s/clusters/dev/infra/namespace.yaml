@@ -1,0 +1,10 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: namespaces-dev
+  namespace: argocd
+
+spec:
+  source:
+    repoURL: https://github.com/Heahaidu/multi-stages-docker-build-springboot
+    path: k8s/shared/namespaces
