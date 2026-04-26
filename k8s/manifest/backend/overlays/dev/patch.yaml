@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
         - name: springboot-health-check
-          image: heahaidu/springboot-health-check
+          image: heahaidu/springboot-health-bootstrap
           env:
             - name: APP_ENV
               value: dev
