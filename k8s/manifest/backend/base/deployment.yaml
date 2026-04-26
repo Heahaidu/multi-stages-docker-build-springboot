@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-health-check
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springboot-health-check
+  template:
+    metadata:
+      labels:
+        app: springboot-health-check
+    spec: 
+      containers:
+        - name: springboot-health-check
+          image: heahaidu/springboot-health-check
+          ports:
+            - name: http
+              contianerPort: 8080

@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-health-check
+spec: 
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: springboot-health-check
+          image: heahaidu/springboot-health-check
+          env:
+            - name: APP_ENV
+              value: dev
