@@ -15,6 +15,9 @@ spec:
       containers:
         - name: springboot-health-check
           image: heahaidu/springboot-health-bootstrap
+          envFrom: 
+            - configMapRef:
+              name: springboot-config
           ports:
             - name: http
-              contianerPort: 8080
+              containerPort: 8080

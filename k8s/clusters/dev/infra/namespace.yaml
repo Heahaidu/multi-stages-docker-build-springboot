@@ -9,7 +9,14 @@ spec:
   source:
     repoURL: https://github.com/Heahaidu/multi-stages-docker-build-springboot
     path: k8s/shared/namespaces
-
+    targetRevision: main
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
