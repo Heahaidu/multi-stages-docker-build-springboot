@@ -10,5 +10,5 @@ images:
 
 labels:
   - pairs:
-      app: springboot
+      app: spring
     includeSelectors: false
