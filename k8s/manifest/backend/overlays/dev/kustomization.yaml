@@ -5,5 +5,4 @@ patches:
   - path: patch.yaml
 
 commonLabels:
-  env: dev
   version: "1.0.0"
