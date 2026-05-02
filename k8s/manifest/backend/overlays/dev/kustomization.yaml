@@ -3,3 +3,8 @@ resources:
 namespace: dev
 patches:
   - path: patch.yaml
+
+commonLabels:
+  app: health
+  env: dev
+  version: "1.0.0"
