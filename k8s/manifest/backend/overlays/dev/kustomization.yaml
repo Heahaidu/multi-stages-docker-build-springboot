@@ -12,3 +12,6 @@ labels:
   - pairs:
       app: spring
     includeSelectors: true
+  - pairs: 
+      team: dev
+    includeSelectors: false
