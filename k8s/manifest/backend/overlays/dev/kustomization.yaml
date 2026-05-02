@@ -5,6 +5,5 @@ patches:
   - path: patch.yaml
 
 commonLabels:
-  app: springboot-health-check
   env: dev
   version: "1.0.0"
