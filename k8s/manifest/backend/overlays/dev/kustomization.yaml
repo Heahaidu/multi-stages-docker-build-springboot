@@ -11,4 +11,5 @@ images:
 labels:
   - pairs:
       app: spring
+      team: dev
     includeSelectors: true
