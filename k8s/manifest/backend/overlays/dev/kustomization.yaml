@@ -7,3 +7,8 @@ patches:
 images:
   - name: heahaidu/springboot-health-bootstrap
     newTag: "1.2"
+
+labels:
+  - pairs:
+      app: springboot
+    includeSelectors: false
