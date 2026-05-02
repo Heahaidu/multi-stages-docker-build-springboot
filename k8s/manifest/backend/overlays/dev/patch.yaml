@@ -7,7 +7,6 @@ spec:
   selector:
     matchLabels:
       app: springboot-health-check
-      env: dev
   template:
     spec:
       containers:
