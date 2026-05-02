@@ -4,9 +4,6 @@ namespace: dev
 patches:
   - path: patch.yaml
 
-commonLabels:
-  env: dev
-
 images:
   - name: heahaidu/springboot-health-bootstrap:1.2
     newTag: "1.2"
