@@ -16,3 +16,5 @@ labels:
       team: dev
     includeSelectors: false
     includeTemplates: true
+
+namePrefix: test-
