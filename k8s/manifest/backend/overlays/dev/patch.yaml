@@ -11,7 +11,11 @@ spec:
     spec:
       containers:
         - name: springboot-health-check
-          image: heahaidu/springboot-health-bootstrap:1.2
+          image: heahaidu/springboot-health-bootstrap
           env:
             - name: APP_ENV
               value: dev
+          resources:
+            requests:
+              cpu: 200m
+              memory: 256Mi
