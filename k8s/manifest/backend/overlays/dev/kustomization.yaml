@@ -5,5 +5,5 @@ patches:
   - path: patch.yaml
 
 images:
-  - name: heahaidu/springboot-health-bootstrap:1.2
+  - name: heahaidu/springboot-health-bootstrap
     newTag: "1.2"
