@@ -3,8 +3,6 @@ kind: Service
 metadata:
   name: springboot-health-check
 spec: 
-  selector: 
-    app: springboot-health-check
   ports:
     - port: 80
       targetPort: 8080
