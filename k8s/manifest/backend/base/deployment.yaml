@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring
+  name: backend
 spec:
   replicas: 1
   template:
     spec: 
       containers:
-        - name: springboot-health-check
+        - name: backend
           image: heahaidu/springboot-health-bootstrap
           ports:
             - name: http

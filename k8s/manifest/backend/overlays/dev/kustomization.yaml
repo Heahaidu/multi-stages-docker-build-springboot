@@ -10,11 +10,18 @@ images:
 
 labels:
   - pairs:
-      app: spring
+      app: backend
     includeSelectors: true
   - pairs: 
       team: dev
     includeSelectors: false
     includeTemplates: true
+commonAnnotations:
+  app: test
 
-namePrefix: test-
+# configMapGenerator:
+#   - name: spring-configmap
+#     env: config.properties
+
+# config.properties
+# ENV=
