@@ -9,5 +9,5 @@ spec:
     - interval: 30s
       port: http
       path: /actuator/prometheus
-  selector:
+  selector: 
     app: backend
