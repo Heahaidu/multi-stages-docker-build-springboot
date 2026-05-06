@@ -4,3 +4,4 @@ metadata:
   name: backend-configmap
 data:
   APP_ENV: default
+  PORT: "8080"

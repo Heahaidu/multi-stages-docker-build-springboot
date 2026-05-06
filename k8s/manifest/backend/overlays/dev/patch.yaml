@@ -9,9 +9,9 @@ spec:
       containers:
         - name: backend
           image: heahaidu/springboot-health-bootstrap
-          env:
-            - name: APP_ENV
-              value: dev
+          envFrom:
+            - configMapRef:
+                name: backend-configmap
           resources:
             requests:
               cpu: 200m
