@@ -6,7 +6,7 @@ metadata:
     release: prometheus
 spec:
   endpoints:
-    - interval: 30s
+    - interval: 5s
       port: http
       path: /actuator/prometheus
   selector: 
